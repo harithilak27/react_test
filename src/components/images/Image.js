@@ -15,7 +15,7 @@ export default function Image() {
     useEffect(() => {
         const intervalId = setInterval(() => {
             setImage(images[Math.floor(Math.random() * images.length)]);
-        }, 5000)
+        }, 3000)
         
         return () => clearInterval(intervalId);
     }, [])

@@ -5,9 +5,12 @@ import './Navbar.css'
 export default function Navbar() {
 
   const [click,setclick] = useState(true);
+  
 
   const toggle = () => setclick(!click);
+
   
+
   return (
     <div className='top'>
       <div className='header'>

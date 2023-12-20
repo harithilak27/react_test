@@ -1,6 +1,6 @@
 .about-Container{
     margin: 0 auto;
-    max-width: 1150px;
+    max-width: 1200px;
     /* text-align: center; */
     line-height: 28px;
     font-size: 16.3px;
@@ -11,4 +11,34 @@
 }
 .about-Container p{
     text-align: justify;
+    margin: 20px;
+}
+.about-Container-2{
+    margin: 0 auto;
+    max-width: 1150px;
+    font-size: 15px;
+    word-spacing: 5px;
+}
+.container-flex{
+    display: flex;
+}
+.about-Container-2 h2{
+    text-align: left;
+}
+.border-box{
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px 60px;
+    border-radius: 8px;
+}
+@media screen and (max-width: 900px) {
+    .container-flex{
+        display: block;
+    }
+}
+@media screen and (max-width: 700px) {
+    .about-Container{
+        word-spacing: 4px;
+    }
+    
 }
