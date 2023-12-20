@@ -1,0 +1,14 @@
+.about-Container{
+    margin: 0 auto;
+    max-width: 1150px;
+    /* text-align: center; */
+    line-height: 28px;
+    font-size: 16.3px;
+    word-spacing: 6px;
+}
+.about-Container h2{
+    text-align: center;
+}
+.about-Container p{
+    text-align: justify;
+}

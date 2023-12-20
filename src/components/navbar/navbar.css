@@ -1,0 +1,180 @@
+.header{
+    background-color: #6f2c93;
+    display: flex;
+    justify-content: space-around;
+    padding: 13px 0px 60px 0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+span{
+    color: white;
+}
+.p{
+    font-size: 18px;
+}
+.second{
+    color: white;
+}
+.contact{
+    display: flex;
+    gap: 30px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+/* navbar */
+
+nav{
+    background-color: rgb(184, 228, 253);
+    color: rgb(40, 40, 216);
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 20px 5px 0;
+    border-radius: 45px;
+    bottom: 50px;
+}
+.unsticky{
+    z-index: 2;
+    width: 75%;
+    position: relative;
+    /* top: -200px; */
+    /* bottom: 20px; */
+    /* left: 100px; */
+    margin-bottom: -90px;
+}
+.usticky{
+    /* position: fixed; */
+    border-bottom: 1.5px solid rgb(40, 40, 216);
+    max-width: 100%;
+    padding: 50px;
+    border-radius: 0;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+a::after{
+    content: " ";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: rgb(40, 40, 216);
+    transition: width 0.3s;
+}
+a:hover::after{
+    width: 20%; 
+}
+.active::after{
+    width: 20%;
+}
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.menu-flex{
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    color: white;
+    background-color: rgb(88, 194, 255);
+    border: 1px solid white;
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 10px;
+    margin: 20px 0px;
+    font-size: 23px;
+    display: none;
+    cursor: pointer;
+}
+.name{
+    display: none;
+}
+@media screen and (max-width: 1250px) {
+    .unsticky{
+        margin-bottom: -110px;
+    }
+}
+@media screen and (max-width: 900px) {
+     .contact{
+        display: block;
+        gap: 0;
+     }
+     .contact div{
+        margin: 0 0 40px 0;
+     }
+}
+@media screen and (max-width: 700px) {
+    .header{
+        display: block;
+        text-align: center;
+    }
+    .contact{
+        display: flex;
+        justify-content: space-around;
+    }
+    /* navbar  */
+    .top{
+    background-color: #6f2c93;
+    padding-bottom: 80px;
+    }
+    .menu{
+        margin: 10px;
+    }
+    nav{
+        text-align: left;
+        padding: 0;
+        /* margin-bottom: 20px; */
+    }
+    ul{
+        display: block;
+        background-color: white;
+        margin: 0 auto;
+        width: 70%;
+        padding: 5px;
+        overflow-y: scroll;
+        height: 250px;
+    }
+    li{
+        padding: 8px 5px;
+        background-color: rgb(88, 194, 255);
+        border-right: 40px solid black;
+    }
+    a:hover::after{
+        width: 0%; 
+    }
+    .active::after{
+        width: 0%;
+    }
+    li:hover{
+        transition: 0.5s;
+        background-color: white;
+        color: rgb(93, 195, 255);
+    }
+    .active li{
+        background-color: white;
+        color: rgb(87, 193, 255);
+    }
+    .menu{
+        display: block;
+    }
+    .unsticky{
+        width: 90%;
+    }
+    .hidden{
+        display: none;
+    }
+    .toggle-space{
+        position: relative;
+        margin-bottom: -390px;
+        z-index: 2;
+        max-width: 90%;
+    }
+}
