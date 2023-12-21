@@ -11,8 +11,8 @@ function App() {
   const [sticky, setSticky] = useState(false);
 
   const handleScroll = debounce(() => {
-    setSticky(window.pageYOffset > 300);
-  }, 200); // Adjust the debounce delay as needed
+    setSticky(window.scrollY > 300);
+  }, 500); // Adjust the debounce delay as needed
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
@@ -21,6 +21,19 @@ function App() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [handleScroll]);
+
+  window.scroll({
+    top: 2500, 
+    left: 0, 
+    behavior: 'smooth'
+  });
+  
+  // Scroll certain amounts from current position 
+  window.scrollBy({ 
+    top: 100, // could be negative value
+    left: 0, 
+    behavior: 'smooth' 
+  });
 
   return (
     <div className="App">
