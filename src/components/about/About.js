@@ -39,7 +39,7 @@ export default function About() {
                 <div className='border-box'>
                     <h2>Application</h2>
                     <div className='download-img'>
-                        <img src={Downloan} alt='' />
+                        <img className='img-load' src={Downloan} alt='' />
                     </div>
                     <h2>News & Events</h2>
                     <div className='marquee'>

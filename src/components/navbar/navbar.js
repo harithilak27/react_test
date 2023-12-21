@@ -15,7 +15,7 @@ export default function Navbar() {
     <div className='top'>
       <div className='header'>
         <div className='logo'>
-          <img src={logo} alt='' />
+          <img className='logo-img' src={logo} alt='' />
         </div>
         <div className='contact'>
           <div>

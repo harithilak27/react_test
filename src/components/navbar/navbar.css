@@ -184,3 +184,14 @@ ul{
         display: block;
     }
 }
+@media screen and (max-width: 420px) {
+    .logo-img{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .contact{
+        display: block;
+        margin-left: 20px;
+    }
+}

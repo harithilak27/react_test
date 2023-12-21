@@ -42,3 +42,16 @@
     }
     
 }
+@media screen and (max-width: 420px) {
+    .img-load{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 350px) {
+    .img-load{
+        width: 100%;
+    }
+    .border-box{
+        padding: 10px 30px;
+    }
+}
