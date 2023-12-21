@@ -31,6 +31,10 @@
     padding: 10px 60px;
     border-radius: 8px;
 }
+.bgBlue{
+    background-color: blue;
+    color: white;
+}
 @media screen and (max-width: 900px) {
     .container-flex{
         display: block;

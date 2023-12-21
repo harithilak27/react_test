@@ -1,4 +1,9 @@
+.fade-in-nav { animation: fadeIn 0.8s; }
 
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
 /* navbar */
 .navbar{
     background-color: rgb(184, 228, 253);

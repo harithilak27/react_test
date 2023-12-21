@@ -9,7 +9,7 @@ export default function Sticky() {
     const toggle = () => setclick(!click);
 
   return (
-    <div className='navbar'>
+    <div className='navbar fade-in-nav'>
       <div className='sticky'>
         <div>
           <div className='sticky-menu-flex'>

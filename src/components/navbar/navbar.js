@@ -9,7 +9,6 @@ export default function Navbar() {
 
   const toggle = () => setclick(!click);
 
-  
 
   return (
     <div className='top'>
